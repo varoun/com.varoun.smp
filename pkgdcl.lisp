@@ -61,4 +61,8 @@
   (:export #:make-count-down-latch
            #:latch-count-down
            #:latch-wait
-           #:latch-current-count))
+           #:latch-current-count)
+
+  ;; volatile-variable
+  (:export #:make-volatile-variable
+           #:variable-value))
