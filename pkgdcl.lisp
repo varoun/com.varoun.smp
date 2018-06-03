@@ -2,8 +2,8 @@
 
 (in-package #:common-lisp-user)
 
-(defpackage #:com.varoun.smp
-  (:nicknames #:smp)
+(defpackage #:com.varoun.threads
+  (:nicknames #:threads)
   (:documentation "Multithreading Utilities.")
   (:use #:common-lisp #:com.varoun.utils)
 

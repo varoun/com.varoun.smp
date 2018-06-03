@@ -1,6 +1,6 @@
 ;;;; Events
 
-(in-package #:com.varoun.smp)
+(in-package #:com.varoun.threads)
 
 (defstruct (event (:constructor make-event (&key
                                             name

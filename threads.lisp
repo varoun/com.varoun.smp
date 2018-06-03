@@ -1,6 +1,6 @@
 ;;;; Portable thread functions
 
-(in-package #:com.varoun.smp)
+(in-package #:com.varoun.threads)
 
 ;;; Most of these are simple wrappers around bordeaux-thread functions
 

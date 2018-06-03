@@ -1,6 +1,6 @@
 ;;;; Support for thread-local variables.
 
-(in-package #:com.varoun.smp)
+(in-package #:com.varoun.threads)
 
 ;;;
 ;;; Special variables defined with DEFINE-THREAD-VARIABLE are portable

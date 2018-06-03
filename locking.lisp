@@ -1,6 +1,6 @@
 ;;;; Code to deal with locking and threads.
 
-(in-package #:com.varoun.smp)
+(in-package #:com.varoun.threads)
 
 (defmacro without-interrupts (&body body)
 
