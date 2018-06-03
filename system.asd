@@ -23,4 +23,5 @@
                (:module "concurrency"
                         :pathname #P"."
                         :components ((:file "lock")
-                                     (:file "condition-variable" :depends-on ("lock"))))))
+                                     (:file "condition-variable" :depends-on ("lock"))
+                                     (:file "count-down-latch" :depends-on ("condition-variable"))))))

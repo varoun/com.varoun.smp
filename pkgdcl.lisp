@@ -52,7 +52,13 @@
            #:lock-held-by-current-thread-p)
 
   ;; condition-variable
-  (export #:make-condition-variable
-          #:condition-wait
-          #:condition-notify
-          #:condition-notify-all))
+  (:export #:make-condition-variable
+           #:condition-wait
+           #:condition-notify
+           #:condition-notify-all)
+
+  ;; count-down-latch
+  (:export #:make-count-down-latch
+           #:latch-count-down
+           #:latch-wait
+           #:latch-current-count))
