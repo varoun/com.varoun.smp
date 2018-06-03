@@ -18,4 +18,5 @@
                         :serial t
                         :components ((:file "threads")
                                      (:file "thread-variables" :depends-on ("threads"))
-                                     (:file "locking")))))
+                                     (:file "locking")
+                                     (:file "events" :depends-on ("locking"))))))

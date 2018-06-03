@@ -29,4 +29,10 @@
            #:when-debugging-locking
            #:make-condition-variable
            #:condition-wait
-           #:condition-signal))
+           #:condition-signal)
+
+  (:export #:event
+           #:make-event
+           #:event-set
+           #:event-check
+           #:event-wait))
