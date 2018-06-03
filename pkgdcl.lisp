@@ -36,3 +36,16 @@
            #:event-set
            #:event-check
            #:event-wait))
+
+(defpackage #:com.varoun.concurrency
+  (:nicknames #:conc)
+  (:use #:common-lisp #:com.varoun.utils)
+  ;; lock
+  (:export #:make-lock
+           #:acquire-lock
+           #:release-lock
+           #:with-lock-held
+           #:with-lock-released
+           #:lock-name
+           #:lock-owner
+           #:lock-held-by-current-thread-p))
