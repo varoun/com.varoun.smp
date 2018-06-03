@@ -22,4 +22,5 @@
                                      (:file "events" :depends-on ("locking"))))
                (:module "concurrency"
                         :pathname #P"."
-                        :components ((:file "lock")))))
+                        :components ((:file "lock")
+                                     (:file "condition-variable" :depends-on ("lock"))))))

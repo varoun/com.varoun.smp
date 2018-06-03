@@ -40,6 +40,7 @@
 (defpackage #:com.varoun.concurrency
   (:nicknames #:conc)
   (:use #:common-lisp #:com.varoun.utils)
+
   ;; lock
   (:export #:make-lock
            #:acquire-lock
@@ -48,4 +49,10 @@
            #:with-lock-released
            #:lock-name
            #:lock-owner
-           #:lock-held-by-current-thread-p))
+           #:lock-held-by-current-thread-p)
+
+  ;; condition-variable
+  (export #:make-condition-variable
+          #:condition-wait
+          #:condition-notify
+          #:condition-notify-all))
