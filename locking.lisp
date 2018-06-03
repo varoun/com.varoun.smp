@@ -14,6 +14,7 @@
   #+sbcl
   `(sb-sys:without-interrupts ,@body))
 
+;;--- TODO(varoun): There are nested eval-when's here, collapse them!
 ;;; atomic-incf
 (eval-when (:compile-toplevel :load-toplevel :execute)
 (defmacro atomic-incf (place &optional (delta 1))
