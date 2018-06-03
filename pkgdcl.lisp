@@ -16,4 +16,17 @@
            #:interrupt-thread
            #:thread-alive-p)
 
-  (:export #:define-thread-variable))
+  (:export #:define-thread-variable)
+
+  (:export #:without-interrupts
+           #:atomic-incf
+           #:compare-and-swap
+           #:make-lock
+           #:name-of-lock
+           #:with-lock-held
+           #:with-recursive-lock-held
+           #:with-maybe-lock-held
+           #:when-debugging-locking
+           #:make-condition-variable
+           #:condition-wait
+           #:condition-signal))

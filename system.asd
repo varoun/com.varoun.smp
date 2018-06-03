@@ -17,4 +17,5 @@
                         :pathname #p"."
                         :serial t
                         :components ((:file "threads")
-                                     (:file "thread-variables" :depends-on ("threads"))))))
+                                     (:file "thread-variables" :depends-on ("threads"))
+                                     (:file "locking")))))
