@@ -65,4 +65,9 @@
 
   ;; volatile-variable
   (:export #:make-volatile-variable
-           #:variable-value))
+           #:variable-value)
+
+  ;; atomic-variable
+  (:export #:make-atomic-variable
+           #:mutate-variable
+           #:increment-variable))

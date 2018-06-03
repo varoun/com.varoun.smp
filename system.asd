@@ -25,4 +25,5 @@
                         :components ((:file "lock")
                                      (:file "condition-variable" :depends-on ("lock"))
                                      (:file "count-down-latch" :depends-on ("condition-variable"))
-                                     (:file "volatile-variable" :depends-on ("lock"))))))
+                                     (:file "volatile-variable" :depends-on ("lock"))
+                                     (:file "atomic-variable" :depends-on ("lock"))))))
