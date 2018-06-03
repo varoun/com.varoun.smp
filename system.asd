@@ -16,6 +16,5 @@
                (:module :main
                         :pathname #p"."
                         :serial t
-                        :components ((:file "threads"))))
-
-  )
+                        :components ((:file "threads")
+                                     (:file "thread-variables" :depends-on ("threads"))))))
